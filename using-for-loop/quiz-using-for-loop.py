@@ -25,3 +25,6 @@ def remark(score):
 score=gk_quiz()
 remark(score)
 print(f"Your score is {score}/5. {remark(score)}")
+
+#Function to conduct quiz
+#def gk_quiz():
