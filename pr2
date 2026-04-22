@@ -1,0 +1,12 @@
+
+# wap to enter a sentence and count no of is
+def count_if_is(a):
+    count=0
+    words=a.split()
+    for word in words:
+        if word=="is":
+            count+=1
+    return count
+sentence=input("Enter a sentence: ")
+result=count_if_is(sentence)
+print("Number of times "is" has appeared in the sentence:", result)
