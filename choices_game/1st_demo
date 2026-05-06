@@ -1,0 +1,28 @@
+import time
+
+def intro():
+    print("--- Welcome to the Labyrinth ---")
+    print("You wake up in a dark room. There are two doors: Left and Right.")
+    choice = input("Which one do you choose? (L/R): ").lower()
+    
+    if choice == "l":
+        treasure_room()
+    elif choice == "r":
+        monster_room()
+    else:
+        print("Invalid choice. The floor collapses!")
+        game_over()
+
+def treasure_room():
+    print("\nYou found a room full of gold! You win!")
+    # Will add more logic here!
+
+def monster_room():
+    print("\nA dragon is here! Do you fight or run?")
+    # Adding more choices here...
+
+def game_over():
+    print("\nGAME OVER. Thanks for playing.")
+
+# This starts the game
+intro()
